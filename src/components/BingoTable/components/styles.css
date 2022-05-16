@@ -1,0 +1,81 @@
+.cell {
+    position: relative;
+    /* display: flexbox; */
+    background: rgb(2,0,36);
+    background: linear-gradient(162deg, rgba(57, 0, 64,1) 0%, rgba(41, 47, 54,1) 35%, rgba(24, 52, 70,1) 100%);
+    border-radius: 7px;
+    color: white;
+}
+
+tr :hover, td :hover {
+    cursor: pointer;
+}
+.cell.active {
+    background-color: green;
+    background: linear-gradient(162deg, rgba(50, 144, 193,1) 0%, rgba(56, 174, 204,1) 35%, rgba(4, 104, 101,1) 100%);
+    object-fit: contain;
+}
+.cellNumber {
+    position: absolute;
+    left: 1;
+    top: 0;
+}
+
+td {
+  border: 1px solid #e5e5e5;
+  padding: 5px 5px;
+  display:flexbox;
+  flex-wrap: wrap;
+  word-wrap:break-word;
+  font-size: clamp(0.4rem, 2vw, 0.75rem) ;
+  /* padding: 12px 5px 5px 5px; */
+}
+  
+@media only screen and (max-width: 280) {
+  td {
+      padding: 5px 5px;
+      max-width: 35px;
+      height: 35px;
+      font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 350) {
+  td {
+      padding: 5px 5px;
+      max-width: 55px;
+      height: 55px;
+  }
+}
+
+@media only screen and (max-width: 350) {
+  td {
+      padding: 5px 5px;
+      max-width: 55px;
+      height: 55px;
+  }
+}
+
+@media only screen and (max-width: 395) {
+  td {
+      padding: 5px 5px;
+      max-width: 65px;
+      height: 65px;
+  }
+}
+
+@media only screen and (max-width: 415) {
+  td {
+      padding: 5px 5px;
+      max-width: 75px;
+      height: 75px;
+  }
+}
+
+@media only screen and (max-width: 768) {
+  td {
+      padding: 5px 5px;
+      min-width: 150px;
+      height: 150px;
+  }
+}

@@ -21,6 +21,10 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "./jest-setup.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

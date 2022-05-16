@@ -1,0 +1,23 @@
+.tableContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: clamp(250px,70vw,350px);
+}
+
+
+table { 
+    table-layout: fixed; 
+    
+}
+
+td { 
+    width:clamp(35px,calc(100%/5),150px); 
+}
+
+
+th {
+    font-family: 'Calistoga-Regular';
+}

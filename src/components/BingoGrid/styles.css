@@ -1,0 +1,124 @@
+.cardsContainer {
+    max-width: 250px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 300px) {
+    .cardsContainer {
+        grid-gap: 10px;
+        max-width: 275px;
+    }
+}
+
+
+@media only screen and (min-width: 400px) {
+    .cardsContainer {
+        grid-gap: 10px;
+        max-width: 320px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .cardsContainer {
+        grid-gap: 15px;
+        max-width: 375px;
+    }
+}
+
+
+.front, .cover {
+    max-width: 150px;
+    max-height: 150px;
+    width:clamp(3rem,7vw ,15rem);
+    height: clamp(3rem,7vw,15rem);
+    background-position: 'center';
+    background-size: 'contain';
+    background-repeat: 'no-repeat';
+    border-radius: 10px;
+    border: 3px solid #046E8F;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+}
+@media only screen and (max-width: 300px) {
+    .front, .cover {
+        width:clamp(3rem,15vw ,9rem);
+        height: clamp(3rem,15vw,9rem);
+    }
+}
+@media only screen and (min-width: 300px) {
+    .front, .cover {
+        width:clamp(3rem,12vw ,9rem);
+        height: clamp(3rem,12vw,9rem);
+    }
+}
+@media only screen and (min-width: 400px) {
+    .front, .cover {
+        width:clamp(3rem,15vw ,9rem);
+        height: clamp(3rem,15vw,9rem);
+    }
+}
+
+
+.front > div {
+    font-family: "Calistoga-Regular";
+    padding: 5px;
+    font-size: clamp(0.3rem, 2.2vw, 1rem);
+}
+
+.cover > div {
+    font-family: "Calistoga-Regular";
+    padding: 5px;
+    font-size: clamp(1.5rem, 2.5vw, 3.5rem);
+    filter: drop-shadow(0.1em 0.1em 0.1em black);
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.card .front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    position: absolute;
+    border-radius: 10px;
+}
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.card .back {
+    transition: all ease-in 0.2s;
+    -webkit-transition: all ease-in 0.2s;
+    -moz-transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+    border-radius: 10px;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+
+@media (max-width: 280) {
+    .cardsContainer {
+        grid-gap: 2px;
+    }
+    .cover > div  {
+        font-size: clamp(1.5rem, 2.5vw, 3.5rem);
+    }
+}
+
