@@ -11,7 +11,7 @@ No extra front-end libraries are used. It's built to be fully responsive.
 
 
 ## Live version
-Check the live version [here on Vercel](#).
+Check the live version [here on Vercel](https://react-bingo-game-gncg5kr9w-davoodmood.vercel.app/).
 
 ## Available Scripts
 
