@@ -13,6 +13,18 @@ No extra front-end libraries are used. It's built to be fully responsive.
 ## Live version
 Check the live version [here on Vercel](https://react-bingo-game-gncg5kr9w-davoodmood.vercel.app/).
 
+**The most important rules in this version:**
+
+- A player wins by completing a row, column, or diagonal.
+- There's a free slot (always on) in the middle
+- You can have multiple bingos
+
+**Extra Features**
+
+1. Randomized numbers and content based on B-I-N-G-O columns.
+2. Two Themes
+3. Card game environment design.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -46,6 +58,16 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Improvement Proposal
+
+1. The game can be extended with `socket.io` node server to add multiplayer experience. 
+2. Random number draw can be implemented.
+3. A tabulation method can be implemented to evade posibble cell/card number duplication.
+
+
+## Known Issues
+
+There is a possibility that the alternative `BingoTable theme` does not fit for screens smaller than 280 pixels width dimention. Such screen size are considerably rare today and is used in older smartphones.
 
 ## Learn More
 
