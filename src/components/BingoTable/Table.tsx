@@ -16,15 +16,22 @@ function randomNumber(index: number) {
   return range + indexedRange;
 }
 
-// let duplicationNumberMemory: {[key: number]: boolean} = {};
-function shuffleNumber(key: number) :number {
+let duplicationNumberMemory: {[key: number]: boolean} = {};
+function shuffleNumber(key: number) : number | null {
   const index: number = key < 5 ? key : key % 5;
-  const numericValue = randomNumber(index);
   
-  // if (duplicationNumberMemory[numericValue]) shuffleNumber(key);
-  // else duplicationNumberMemory[numericValue] = true;
-  
-  return numericValue;
+  const shuffledValue: number | null = (
+    () => {
+      const numericValue = randomNumber(index);
+      if (duplicationNumberMemory[numericValue]) return null;
+      else {
+        duplicationNumberMemory[numericValue] = true;
+        return numericValue
+      }
+    }
+  )()
+
+  return shuffledValue ?  shuffledValue : shuffleNumber(index)
 }
 
 function mergeBingoData(bingoData: Array<Array<Column>>): Promise<Array<Array<Column>>> {
