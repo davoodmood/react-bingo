@@ -7,8 +7,7 @@ It is built to a 2 built-in themes.
 - BingoGrid: A default modern look with animations with CSS Grid layout. (default)
 - BingoTable: An alternative simplified edition with with Table tag.
 
-No extra front-end libraries are used. It's built to be fully responsive.
-
+No extra front-end libraries are used. It's built to be fully responsive using vanilla CSS. Unique numbers are generated using dynamic programminc technique for memorization using recursive calls.
 
 ## Live version
 Check the live version [here on Vercel](https://react-bingo-game-gncg5kr9w-davoodmood.vercel.app/).
@@ -21,7 +20,7 @@ Check the live version [here on Vercel](https://react-bingo-game-gncg5kr9w-davoo
 
 **Extra Features**
 
-1. Randomized numbers and content based on B-I-N-G-O columns.
+1. Uniqe Randomized numbers and content based on B-I-N-G-O columns.
 2. Two Themes
 3. Card game environment design.
 
@@ -62,7 +61,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 1. The game can be extended with `socket.io` node server to add multiplayer experience. 
 2. Random number draw can be implemented.
-3. A tabulation method can be implemented to evade posibble cell/card number duplication.
 
 
 ## Known Issues
