@@ -7,10 +7,10 @@ It is built to a 2 built-in themes.
 - BingoGrid: A default modern look with animations with CSS Grid layout. (default)
 - BingoTable: An alternative simplified edition with with Table tag.
 
-No extra front-end libraries are used. It's built to be fully responsive using vanilla CSS. Unique numbers are generated using dynamic programminc technique for memorization using recursive calls.
+No extra front-end libraries are used. It's built to be fully responsive using vanilla CSS. Unique numbers are generated using dynamic programming technique for memorization using recursive calls.
 
 ## Live version
-Check the live version [here on Vercel](https://react-bingo-game-gncg5kr9w-davoodmood.vercel.app/).
+Check the live version [here on Vercel](https://react-bingo-game-two.vercel.app/).
 
 **The most important rules in this version:**
 
